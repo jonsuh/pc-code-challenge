@@ -373,6 +373,9 @@ html {
   box-sizing: inherit; }
 
 body {
+  padding-top: 100px; }
+
+body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: skolar-sans-latin, "Skolar Sans Latin", -apple-system, ".SFNSDisplay-Regular", Roboto, Helvetica, Arial, sans-serif;
@@ -465,19 +468,39 @@ p {
 .donate {
   max-width: 300px;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px; }
+  margin-right: auto; }
 
-.donate__tip {
+.donate__progress,
+.donate__progress--hover {
+  background-color: #fafafa;
+  border: 1px solid #dcdcdc;
+  border-bottom: 0;
+  height: 14px;
+  box-shadow: inset 0 2px 0 #f4f4f4;
+  position: relative; }
+  .donate__progress:hover .donate__progress-tip,
+  .donate__progress--hover:hover .donate__progress-tip {
+    opacity: 1;
+    transform: translateY(calc(-100% - 12px)) scale(1); }
+
+.donate__progress-bar {
+  background-color: #f15e33;
+  height: 100%; }
+
+.donate__progress-tip {
   font-weight: 500;
   text-align: center;
   color: #fff;
   padding: 10px 15px 14px;
   border-radius: 3px;
   background-color: #424242;
-  margin-bottom: 10px;
-  position: relative; }
-  .donate__tip::before {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+  transition-property: opacity, transform;
+  transform: translateY(calc(-100% - 4px)) scale(0.9); }
+  .donate__progress-tip::before {
     content: "";
     position: absolute;
     bottom: -7px;
@@ -487,17 +510,6 @@ p {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 7px solid #424242; }
-
-.donate__progress {
-  background-color: #fafafa;
-  border: 1px solid #dcdcdc;
-  border-bottom: 0;
-  height: 14px;
-  box-shadow: inset 0 2px 0 #f4f4f4; }
-
-.donate__progress-bar {
-  background-color: #f15e33;
-  height: 100%; }
 
 .donate__main {
   font-size: 15px;
