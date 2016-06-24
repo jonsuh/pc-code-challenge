@@ -1,2 +1,48 @@
 // Buttons
 // ==================================================
+.button {
+  font-size: 14px;
+  font-weight: 600;
+  color: $grey;
+  padding: 6px 25px 10px;
+  border: 1px solid $grey-light;
+  border-radius: 3px;
+  background-color: $grey-lightest;
+  box-shadow: 0 2px $grey-light;
+  cursor: pointer;
+  transition: transform 0.05s linear;
+  transition-property: background-color, transform, box-shadow;
+
+  &:focus,
+  &:hover {
+    background-color: $white;
+  }
+
+  &:active {
+    background-color: $grey-lightest;
+    transform: translateY(1px);
+    box-shadow: 0 1px $grey-light;
+  }
+}
+
+.button--green {
+  color: $white;
+  background-color: $green;
+  border-color: $green-dark;
+  box-shadow: 0 2px $green-dark;
+}
+
+.button--big {
+  font-size: 18px;
+  font-weight: 700;
+
+  &:focus,
+  &:hover {
+    background-color: lighten($green, 3%);
+  }
+
+  &:active {
+    background-color: $green;
+    box-shadow: 0 1px $green-dark;
+  }
+}
