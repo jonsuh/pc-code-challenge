@@ -3,8 +3,9 @@
 .form-input {
   border: 1px solid $grey-light;
   border-radius: $border-radius;
-  box-shadow: inset 0 2px  $grey-lightest;
+  box-shadow: inset 0 2px $grey-lightest;
   padding: 6px 15px 10px;  // y-padding should be 8px, but had to tweak b/c of the font
+  appearance: none;
   font-feature-settings: initial;
 
   &::placeholder {
