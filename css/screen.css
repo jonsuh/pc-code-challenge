@@ -539,7 +539,7 @@ p {
     padding-bottom: 14px; }
 
 .button--donate__give {
-  font-family: proxima-nova-soft;
+  font-family: proxima-nova-soft, "Proxima Nova Soft", skolar-sans-latin, "Skolar Sans Latin", -apple-system, ".SFNSDisplay-Regular", Roboto, Helvetica, Arial, sans-serif;
   padding-top: 8px;
   padding-bottom: 8px; }
 
