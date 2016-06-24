@@ -4,4 +4,10 @@ body {
   @include font-smoothing;
 
   font-family: $sans-serif;
+  font-feature-settings: "onum";
+}
+
+p {
+  line-height: 1.4;
+  margin-top: 0;
 }
