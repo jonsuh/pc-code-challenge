@@ -4,9 +4,9 @@
   font-size: 14px;
   font-weight: 600;
   color: $grey;
-  padding: 6px 25px 10px;
+  padding: 6px 25px 10px; // y-padding should be 8px, but had to tweak b/c of the font
   border: 1px solid $grey-light;
-  border-radius: 3px;
+  border-radius: $border-radius;
   background-color: $grey-lightest;
   box-shadow: 0 2px $grey-light;
   cursor: pointer;
