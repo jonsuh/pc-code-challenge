@@ -9,7 +9,7 @@
 }
 
 .donate__progress,
-.donate__progress--hover {
+.donate__progress--hover /* In the event the tip should be visible by default */ {
   background-color: $grey-lightest;
   border: 1px solid $grey-light;
   border-bottom: 0;
