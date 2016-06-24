@@ -11,14 +11,16 @@
   box-shadow: 0 2px $grey-light;
   cursor: pointer;
   transition: transform 0.05s linear;
-  transition-property: background-color, transform, box-shadow;
+  transition-property: color, background-color, transform, box-shadow;
 
   &:focus,
   &:hover {
+    color: $grey-dark;
     background-color: $white;
   }
 
   &:active {
+    color: $grey;
     background-color: $grey-lightest;
     transform: translateY(1px);
     box-shadow: 0 1px $grey-light;
@@ -38,6 +40,7 @@
 
   &:focus,
   &:hover {
+    color: $white;
     background-color: lighten($green, 3%);
   }
 
